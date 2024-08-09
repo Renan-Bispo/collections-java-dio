@@ -1,11 +1,11 @@
 package list.BasicOperations.ShoppingCart;
 
-public class item {
+public class Item {
     private String name;
     private double price;
     private int amount;
 
-    public item(String name, double price, int amount) {
+    public Item(String name, double price, int amount) {
         this.name = name;
         this.price = price;
         this.amount = amount;
