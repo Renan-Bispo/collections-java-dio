@@ -24,5 +24,19 @@ public class ShoppingCart {
         } else System.out.println("A lista está vazia");
 
     }
+    public void displayItem(){
+        if (!itens.isEmpty()){
+            System.out.println(this.itens);
 
+        } else {
+            System.out.println("Sua lista está vazia");
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "ShoppingCart{" +
+                "itens=" + itens +
+                '}';
+    }
 }
