@@ -18,5 +18,19 @@ public class BookCatalog {
         Book book = new Book(title, author, yearOfRelease);
         this.books.add(book);
     }
+
+    public List<Book> searchByAtuhor(String author){
+        List<Book> searchAutor = new ArrayList<>();
+        if(!author.isEmpty()){
+            for (Book book : books){
+                if (book.getAuthor().equalsIgnoreCase(author)){
+                    searchAutor.add(book);
+                }
+            }
+            return searchAutor;
+        } else {
+            throw new RuntimeException("Livro não econtrado");
+        }
+    }
 }
 
