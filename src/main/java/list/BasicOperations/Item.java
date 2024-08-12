@@ -1,4 +1,4 @@
-package list.BasicOperations.ShoppingCart;
+package list.BasicOperations;
 
 public class Item {
     private String name;
