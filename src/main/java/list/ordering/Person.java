@@ -41,7 +41,7 @@ public class Person implements Comparable<Person> {
                 '}';
     }
 
-    class CompareByHeight implements Comparator<Person> {
+    static class CompareByHeight implements Comparator<Person> {
 
         @Override
         public int compare(Person p1, Person p2) {
